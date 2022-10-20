@@ -81,7 +81,7 @@ const Nav = () => {
   return (
     <>
       <MobileHeader>
-        <Title>Antoine Kingue</Title>
+        <Title>slorixsh</Title>
         {openOnMobile ? (
           <XIcon onClick={toggleMobileMenu} />
         ) : (

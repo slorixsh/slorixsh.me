@@ -31,10 +31,11 @@ const Presence = () => {
         typeof pagetoken === "undefined" ? "" : `&pageToken=${pagetoken}`,
       mykey = "AIzaSyAjKJu67fWow1yBerxVbwViPJEVeU__qLQ",
       playListID = "PLhHTmkVZGji6wJdQofSxcsyWYm0P6BeSY",
-      URL = `https://www.googleapis.com/youtube/v3/playlists?part=snippet&maxResults=50&playlistId=${playListID}&key=${mykey}${pt}`;
+      URL = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=${playListID}&key=${mykey}${pt}`;
     return URL;
   };
 
+   
   const responseHandler = (response) => {
     //if (response.nextPageToken) apiCall(response.nextPageToken);
 
